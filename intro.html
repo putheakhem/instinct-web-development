@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Intro Js</title>
+</head>
+<body>
+    
+<form action="" method="get">
+    <label for="a">A:</label>
+    <input type="text" id="a"> <br>
+    <label for="b">B:</label>
+    <input type="text" id="b"> <br>
+    <select name="" id="sign">
+        <option value="1">+</option>
+        <option value="2">-</option>
+    </select>
+    <button type="button" onclick="sum();">Sum</button>
+    <label for="" id="result"></label>
+</form>
+
+<script>
+    function sum() {
+        var a = parseInt(document.getElementById('a').value);
+        var b = parseInt(document.getElementById('b').value);
+        
+        document.getElementById('result').innerHTML = a+b;
+
+    }
+</script>
+
+
+</body>
+</html>
